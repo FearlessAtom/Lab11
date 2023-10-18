@@ -8,12 +8,11 @@ int main() {
     printf("Enter the value for 'a': ");int a;scanf("%d", &a);
     printf("Enter the value for 'b': ");int b;scanf("%d", &b);
     if (a >= b) {printf("'a' must be less than 'b'!\n");return 1;}
-    const int arraySize = 10;
-    int array[arraySize];
+    int array[10];
     int min = 9999999;
     int sum = 0;
     int foundZero = 0;
-    for (int index = 0; index < arraySize; index++) {
+    for (int index = 0; index < 10; index++) {
         array[index] = rand() % (b - a + 1) + a;
         if (fabs(array[index]) < min) {
             min = abs(array[index]);}
